@@ -16,13 +16,13 @@ function adicionarNovaTarefa(){
 function mostrarTarefas(){
     let novaLi = ''
 
-    minhaListaDeItens.forEach((tarefa) => {
+    minhaListaDeItens.forEach((tarefa, posicao) => {
         novaLi = novaLi + `
         
          <li class="task">
                <img src="./img/checked.png" alt="check-na-tarefa">
               <p>${tarefa}</p>
-              <img src="./img/trash.png" alt="tarefa-para-o-lixo">
+              <img src="./img/trash.png" alt="tarefa-para-o-lixo" onclick="deletarItem(${posicao})">
          </li>
 
 
@@ -31,6 +31,12 @@ function mostrarTarefas(){
     })
 
     listaCompleta.innerHTML = novaLi
+}
+
+function deletarItem(posicao){
+    minhaListaDeItens.splice(posicao, 1)
+
+    mostrarTarefas()
 }
 
 button.addEventListener('click', adicionarNovaTarefa)
