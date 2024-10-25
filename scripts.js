@@ -50,4 +50,8 @@ function deletarItem(posicao){
     mostrarTarefas()
 }
 
+function recarregarTarefas(){
+    const tarefasDoLocalStorage = localStorage.getItem('lista')
+}
+
 button.addEventListener('click', adicionarNovaTarefa)
