@@ -54,4 +54,5 @@ function recarregarTarefas(){
     const tarefasDoLocalStorage = localStorage.getItem('lista')
 }
 
+recarregarTarefas()
 button.addEventListener('click', adicionarNovaTarefa)
