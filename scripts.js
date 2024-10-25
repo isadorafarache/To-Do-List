@@ -38,6 +38,8 @@ function mostrarTarefas(){
 
 function concluirTarefa(posicao){
 minhaListaDeItens[posicao].concluida = !minhaListaDeItens[posicao].concluida
+
+mostrarTarefas()
 }
 
 function deletarItem(posicao){
