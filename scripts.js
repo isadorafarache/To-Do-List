@@ -34,6 +34,8 @@ function mostrarTarefas(){
     })
 
     listaCompleta.innerHTML = novaLi
+
+    localStorage.setItem('lista', JSON.stringify(minhaListaDeItens))
 }
 
 function concluirTarefa(posicao){
