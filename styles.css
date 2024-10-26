@@ -80,3 +80,41 @@ img {
     background-color: #8fac55;
     text-decoration: line-through;
 }
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+        width: 90%;
+    }
+
+    .input-task {
+        width: calc(100% - 120px); /* Ajusta a largura do input */
+    }
+
+    .button-add-task {
+        height: 35px;
+        font-size: 15px;
+        padding: 0 10px; /* Ajuste no padding do botão */
+    }
+
+    .task {
+        height: 45px; /* Ajusta a altura da tarefa */
+    }
+
+    img {
+        height: 20px; /* Ajusta a altura das imagens em telas menores */
+    }
+}
+
+@media (max-width: 400px) {
+    .input-task {
+        width: 100%; /* O input ocupa toda a largura em telas muito pequenas */
+        margin-bottom: 15px; /* Ajusta o espaçamento */
+    }
+
+    .button-add-task {
+        width: 100%; /* Botão ocupa toda a largura */
+    }
+}
