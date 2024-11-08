@@ -2,7 +2,7 @@
 ## 🟢 To-Do List
 
 ### 🛠️ Status Atual
-#### O projeto foi finalizado! Todas as funcionalidades foram adicionadas. A única coisa que falta é torná-lo responsivo para diferentes dispositivos. Fique atento às atualizações!
+#### O projeto foi finalizado! Todas as funcionalidades foram adicionadas.
 
 ### 📋 Funcionalidades Planejadas
 - Adicionar, editar e remover tarefas.
